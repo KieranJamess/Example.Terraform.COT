@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>terraform-module</id>
+    <title>terraform-module</title>
+    <version>1.0.0</version>
+    <description>Terraform Modules</description>
+    <authors>Kieran James</authors>
+  </metadata>
+  <files>
+    <file src="..\src\key_vault\**\*.tf" target="key_vault" />
+    <file src="..\src\network\**\*.tf" target="network" />
+    <file src="..\src\vm\**\*.tf" target="vm" />
+    <file src="..\src\vm\**\*.ps1" target="vm" />
+  </files>
+</package>
