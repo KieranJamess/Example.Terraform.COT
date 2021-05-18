@@ -6,6 +6,42 @@ Terraform Readme generator - found [here](https://github.com/terraform-docs/terr
 
 Terraform Variable generator - found [here](https://github.com/alexandrst88/terraform-variables-generator)
 
+## File Structure
+
+```
+Terraform
+├── ModuleRepo
+├── Terraform-Code
+│   ├── build
+│   │   └── build_module.ps1
+│   ├── src
+│   │   ├── infrastructure.tf
+│   │   ├── key_vault.tf
+│   │   ├── main.tf
+│   │   ├── network.tf
+│   │   └── provider.tf
+│   └── test
+│       └── tfvalidate.ps1
+├── Terraform-Module
+│   ├── build
+│   │   └── terraform-module.nuspec
+│   └── src
+│       ├── key_vault
+│       │   ├── main.tf
+│       │   ├── outputs.tf
+│       │   └── variables.tf
+│       ├── network
+│       │   ├── main.tf
+│       │   ├── outputs.tf
+│       │   └── variables.tf
+│       └── VM
+│           ├── main.tf
+│           ├── resources.ps1
+│           └── variables.tf
+├── .gitignore
+└── README.md
+```
+
 ## Packaging the modules
 
 The modules are packaged using nuget. This creates a local nupkg file stored in it's directory which is then referenced to install the modules for terraform to use. 
