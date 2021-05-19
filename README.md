@@ -6,7 +6,7 @@ Terraform Readme generator - found [here](https://github.com/terraform-docs/terr
 
 Terraform Variable generator - found [here](https://github.com/alexandrst88/terraform-variables-generator)
 
-## File Structure
+## Structure
 
 ```
 Terraform
@@ -41,6 +41,8 @@ Terraform
 ├── .gitignore
 └── README.md
 ```
+
+![diagram](.\assets\Diagram.png)
 
 ## Packaging the modules
 
