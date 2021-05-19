@@ -42,7 +42,7 @@ Terraform
 └── README.md
 ```
 
-![diagram](.\assets\Diagram.png)
+![diagram](./assets/Diagram.png)
 
 ## Packaging the modules
 
