@@ -50,6 +50,8 @@ The modules are packaged using nuget. This creates a local nupkg file stored in 
 
 There is a nuspec file located in the terraform-module directory which is used to package up the required files.
 
+The process for packing up the modules have been put in place to show how this would be done using a CI/CD pipeline. 
+
 ## Installing the modules
 
 To use this repo, you'll need to install the terraform modules. If you run the `build_module.ps1` file in `terraform-code\build` it will install the terraform modules into the correct directory under src ready for the terraform code to reference. You will need to do this **before** your `terraform init`. 

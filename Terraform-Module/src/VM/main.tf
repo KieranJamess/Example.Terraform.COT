@@ -7,7 +7,7 @@ locals {
   location = var.location
   resource_group_name = var.resource_group_name
   vm_number = var.vm_number
-  resourcesScript= try(file("./terraform-module/vm/resources.ps1"), null)
+  resourcesScript = try(file("./terraform-module/vm/resources.ps1"), null)
   base64EncodedScript = base64encode(local.resourcesScript)
 }
 
@@ -85,8 +85,7 @@ resource "azurerm_windows_virtual_machine" "winvm" {
 
   lifecycle {
     ignore_changes = [
-      tags,
-      identity
+      tags
     ]
   }
 }
