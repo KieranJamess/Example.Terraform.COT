@@ -54,7 +54,9 @@ There is a nuspec file located in the terraform-module directory which is used t
 
 To use this repo, you'll need to install the terraform modules. If you run the `build_module.ps1` file in `terraform-code\build` it will install the terraform modules into the correct directory under src ready for the terraform code to reference. You will need to do this **before** your `terraform init`. 
 
-There is also a `tfvalidate` file in the test directory to run a couple of tests on your terraform code to ensure the configuration is good. 
+## Testing the code
+
+There is a `tfvalidate` file in the test directory to run a couple of tests on your terraform code to ensure the configuration is good. This runs a `terraform init --backend=false` and also a `terraform validate`.
 
 ## Requirements
 
